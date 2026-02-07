@@ -1,0 +1,50 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]",
+          "username": "[%key:common::config_flow::data::username%]"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "alarm_active": {
+        "name": "Alarm active"
+      },
+      "connected": {
+        "name": "Connected"
+      },
+      "regeneration_active": {
+        "name": "Regeneration active"
+      }
+    },
+    "sensor": {
+      "current_flow": {
+        "name": "Current flow"
+      },
+      "days_remaining": {
+        "name": "Days remaining"
+      },
+      "remaining_capacity": {
+        "name": "Remaining capacity"
+      },
+      "water_pressure": {
+        "name": "Water pressure"
+      },
+      "water_used_today": {
+        "name": "Water used today"
+      }
+    }
+  }
+}
